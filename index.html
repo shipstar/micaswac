@@ -8,6 +8,54 @@
         justify-content: center;
         align-items: center;
       }
+
+      @-webkit-keyframes rotating /* Safari and Chrome */ {
+        0% {
+          -webkit-transform: rotateY(0deg);
+          -o-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        80% {
+          -webkit-transform: rotateY(0deg);
+          -o-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        100% {
+          -webkit-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+      }
+      @keyframes rotating {
+        0% {
+          -ms-transform: rotateY(0deg);
+          -moz-transform: rotateY(0deg);
+          -webkit-transform: rotateY(0deg);
+          -o-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        80% {
+          -ms-transform: rotateY(0deg);
+          -moz-transform: rotateY(0deg);
+          -webkit-transform: rotateY(0deg);
+          -o-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        100% {
+          -ms-transform: rotateY(360deg);
+          -moz-transform: rotateY(360deg);
+          -webkit-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+      }
+      img {
+        -webkit-animation: rotating 12s ease-in-out infinite;
+        -moz-animation: rotating 12s ease-in-out infinite;
+        -ms-animation: rotating 12s ease-in-out infinite;
+        -o-animation: rotating 12s ease-in-out infinite;
+        animation: rotating 12s ease-in-out infinite;
+      }
     </style>
     <title>MICASWAC - McKenna is cool and so we are cool</title>
     <meta name="description" content="McKenna is cool and so we are cool" />

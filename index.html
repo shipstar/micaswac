@@ -49,19 +49,74 @@
           transform: rotateY(360deg);
         }
       }
-      img {
+      .rotate {
         -webkit-animation: rotating 12s ease-in-out infinite;
         -moz-animation: rotating 12s ease-in-out infinite;
         -ms-animation: rotating 12s ease-in-out infinite;
         -o-animation: rotating 12s ease-in-out infinite;
         animation: rotating 12s ease-in-out infinite;
       }
+
+      @-webkit-keyframes spinny-boi /* Safari and Chrome */ {
+        0% {
+          -webkit-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+        }
+        80% {
+          -webkit-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+        }
+        100% {
+          -webkit-transform: rotateZ(360deg);
+          -o-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+        }
+      }
+      @keyframes spinny-boi {
+        0% {
+          -ms-transform: rotateZ(0deg);
+          -moz-transform: rotateZ(0deg);
+          -webkit-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+        }
+        80% {
+          -ms-transform: rotateZ(0deg);
+          -moz-transform: rotateZ(0deg);
+          -webkit-transform: rotateZ(0deg);
+          -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+        }
+        100% {
+          -ms-transform: rotateZ(360deg);
+          -moz-transform: rotateZ(360deg);
+          -webkit-transform: rotateZ(360deg);
+          -o-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
+        }
+      }
+      .spin {
+        -webkit-animation: spinny-boi 8s ease-in-out infinite;
+        -moz-animation: spinny-boi 8s ease-in-out infinite;
+        -ms-animation: spinny-boi 8s ease-in-out infinite;
+        -o-animation: spinny-boi 8s ease-in-out infinite;
+        animation: spinny-boi 8s ease-in-out infinite;
+      }
+      .huge {
+        font-size: 4rem;
+        margin: 0;
+      }
     </style>
     <title>MICASWAC - McKenna is cool and so we are cool</title>
     <meta name="description" content="McKenna is cool and so we are cool" />
   </head>
   <body>
-    <h1>McKenna is cool and so we are cool</h1>
-    <img src="matt-mckenna.jpg" />
+    <h1>McKenna is dad and so we are dad</h1>
+    <img src="matt-mckenna.jpg" class="rotate" />
+    <p class="huge spin">👶</p>
+
+    <h2>Congrats on babby.</h2>
   </body>
 </html>

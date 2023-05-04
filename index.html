@@ -7,6 +7,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 4rem;
       }
 
       @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -104,19 +105,36 @@
         -o-animation: spinny-boi 8s ease-in-out infinite;
         animation: spinny-boi 8s ease-in-out infinite;
       }
+      .large {
+        font-size: 1.5rem;
+      }
       .huge {
         font-size: 4rem;
-        margin: 0;
+      }
+      .hat {
+        position: absolute;
+        top: -1.75rem;
+        left: 1.75rem;
+        z-index: 100;
+        transform: rotate(-15deg);
+      }
+      .photo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
       }
     </style>
     <title>MICASWAC - McKenna is cool and so we are cool</title>
     <meta name="description" content="McKenna is cool and so we are cool" />
   </head>
   <body>
-    <h1>McKenna is dad and so we are dad</h1>
-    <img src="matt-mckenna.jpg" class="rotate" />
-    <p class="huge spin">👶</p>
-
-    <h2>Congrats on babby.</h2>
+    <h1>McKenna is VP and so we are VP</h1>
+    <div class="photo">
+      <span class="huge hat">👑</span>
+      <img src="matt-mckenna.jpg" />
+    </div>
+    <p class="large">"You come at the king, you best not miss."</p>
   </body>
 </html>
